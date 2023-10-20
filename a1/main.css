@@ -1,0 +1,75 @@
+body{
+  animation: backgroundColorChange 10s linear infinite; /* Animation for continuous color change */
+  font-family: Arial, Helvetica, sans-serif;
+}
+/* Styling for the main heading */
+h1{
+  color: white;
+  background-image: url(background.jpg);
+  text-align: center;
+  padding: 30px;
+  margin: 30px;
+  font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+font-style: oblique;
+}
+/* Styling for ordered lists */
+ol{
+  display: flex;
+  text-align: left;
+  padding: 5px;
+  margin-left: auto;
+  font-size: small;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  
+  
+}
+/* Styling for links */
+a {
+  color:Black;
+}
+/* Apply a secondary styling to some elements with the "secondary" class */
+.secondary {
+  background: white;
+  color: black;
+}
+/* Styling for list items */
+ li{
+  display:inline-block;
+  list-style-type: none;
+  padding: 10px 60px 10px 60px;
+  align-self: center;
+}
+/* Styling for images */
+img{
+  size: 20spx;
+
+  border: 20px solid #00f; 
+  transition: border 1s;
+  animation: borderChange 5s linear infinite;
+}
+/* Styling for the unordered list */
+ul{
+  background-image: url(the\ dance\ 2.jpg);
+  padding: 30px;
+  margin: 30px;
+  opacity: 100%;
+  
+
+}
+/* Keyframes for the image border color change animation */
+
+@keyframes borderChange {
+  0% { border-color: rgb(255, 0, 0); } 
+  25% { border-color: rgba(242, 255, 0, 0.707); } 
+  50% { border-color: rgba(0, 4, 255, 0.425); } 
+  75% { border-color: rgba(255, 0, 221, 0.199); } 
+  100% { border-color: rgb(255, 0, 0); } 
+}
+/* Keyframes for the background color change animation */
+@keyframes backgroundColorChange {
+  0% { background-color: rgba(0, 0, 0, 0.988); } 
+  25% { background-color: rgb(67, 67, 67); }
+  50% { background-color: rgb(255, 0, 0); } 
+  75% { background-color: rgb(67, 67, 67); } 
+  100% { background-color: rgb(0, 0, 0).988; } 
+}
